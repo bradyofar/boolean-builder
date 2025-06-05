@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Pulsar Boolean Generator</title>
+<title>Pulsar Boolean Builder</title>
 <style>
 :root {
   --primary: #4460F1;
@@ -143,8 +143,8 @@ input:focus, select:focus, textarea:focus {
 }
 
 .platform-checkboxes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
   margin-top: 0.5rem;
 }
@@ -256,6 +256,7 @@ textarea {
     padding: 1.5rem;
   }
   .form-grid, .connector-grid { grid-template-columns: 1fr; }
+  .platform-checkboxes { grid-template-columns: 1fr; }
   .button-row { flex-direction: column; }
   button { width: 100%; justify-content: center; }
 }
@@ -367,26 +368,40 @@ textarea {
 <div class="form-group">
   <label>Platforms</label>
   <div class="platform-checkboxes">
-    <input type="checkbox" id="tiktok" name="platform" value="TIKTOK">
-    <label for="tiktok">TikTok</label>
+    <div>
+      <input type="checkbox" id="tiktok" name="platform" value="TIKTOK">
+      <label for="tiktok">TikTok</label>
+    </div>
     
-    <input type="checkbox" id="instagram" name="platform" value="INSTAGRAM">
-    <label for="instagram">Instagram</label>
+    <div>
+      <input type="checkbox" id="instagram" name="platform" value="INSTAGRAM">
+      <label for="instagram">Instagram</label>
+    </div>
     
-    <input type="checkbox" id="youtube" name="platform" value="YOUTUBE">
-    <label for="youtube">YouTube</label>
+    <div>
+      <input type="checkbox" id="youtube" name="platform" value="YOUTUBE">
+      <label for="youtube">YouTube</label>
+    </div>
     
-    <input type="checkbox" id="pinterest" name="platform" value="PINTEREST">
-    <label for="pinterest">Pinterest</label>
+    <div>
+      <input type="checkbox" id="pinterest" name="platform" value="PINTEREST">
+      <label for="pinterest">Pinterest</label>
+    </div>
     
-    <input type="checkbox" id="threads" name="platform" value="THREADS">
-    <label for="threads">Threads</label>
+    <div>
+      <input type="checkbox" id="threads" name="platform" value="THREADS">
+      <label for="threads">Threads</label>
+    </div>
     
-    <input type="checkbox" id="facebook" name="platform" value="FACEBOOK">
-    <label for="facebook">Facebook</label>
+    <div>
+      <input type="checkbox" id="facebook" name="platform" value="FACEBOOK">
+      <label for="facebook">Facebook</label>
+    </div>
     
-    <input type="checkbox" id="twitter" name="platform" value="TWITTER">
-    <label for="twitter">Twitter</label>
+    <div>
+      <input type="checkbox" id="twitter" name="platform" value="TWITTER">
+      <label for="twitter">Twitter</label>
+    </div>
   </div>
 </div>
 
